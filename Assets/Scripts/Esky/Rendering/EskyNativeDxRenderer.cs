@@ -157,8 +157,8 @@ namespace ProjectEsky.Rendering{
                 renderTextureSettings.LeftCamera.transform.localPosition=new Vector3(-(calibration.baseline/2.0f),0,0);
                 renderTextureSettings.RightCamera.transform.localPosition=new Vector3((calibration.baseline/2.0f),0,0);
                 if(renderTextureSettings.RequiresRotation){
-                    renderTextureSettings.LeftCamera.transform.Rotate(new Vector3(0,0,90),Space.Self);
-                    renderTextureSettings.RightCamera.transform.Rotate(new Vector3(0,0,90),Space.Self);        
+                    renderTextureSettings.LeftCamera.transform.Rotate(new Vector3(0,0,0),Space.Self);
+                    renderTextureSettings.RightCamera.transform.Rotate(new Vector3(0,0,0),Space.Self);        
                 }
                 renderTextureSettings.LeftRenderTexture = new RenderTexture(displaySettings.EyeTextureWidth, displaySettings.EyeTextureHeight, 24, renderTextureFormat);
                 renderTextureSettings.RightRenderTexture = new RenderTexture(displaySettings.EyeTextureWidth, displaySettings.EyeTextureHeight, 24, renderTextureFormat);
